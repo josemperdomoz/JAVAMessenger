@@ -1,3 +1,10 @@
+Overall project structure
+http://makemobiapps.blogspot.fi/p/multiple-client-server-chat-programming.html
+read this first
+
+https://www.theseus.fi/bitstream/handle/10024/46979/merged_document.pdf?sequence=1&isAllowed=y - report
+
+
 Networking and Threading 
 http://math.hws.edu/javanotes/c11/s4.html // Synchronous communication
 
