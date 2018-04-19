@@ -4,6 +4,28 @@ http://math.hws.edu/javanotes/c11/s4.html // Synchronous communication
 
 http://math.hws.edu/javanotes/c12/index.html // Section 4 really useful for asynchronous communication 
 
+Rest API
+https://www.tutorialspoint.com/restful/index.htm
+better to go through the whole tutorial (pages are on the left)
+
+JSon
+https://www.tutorialspoint.com/json/json_java_example.htm
+
+Roman`s code on JSon
+String res = loadAnnouncements();
+            try {
+                JSONArray json = new JSONArray( res );
+                for( int i = 0; i < json.length(); i++ ){
+                    HashMap< String, String > map = new HashMap<😠);
+                    map.put( "date", json.getJSONObject( i ).getString( "date" ).split( " " )[0]);
+                    map.put( "title", json.getJSONObject( i ).getString( "title" ));
+                    map.put( "text", json.getJSONObject( i ).getString( "text" ));
+                    map.put( "bywho", json.getJSONObject( i ).getString( "bywho" ));
+                    announcements.add( map );
+                }
+            } catch (JSONException e) {
+                //e.printStackTrace();
+            }
 
 
 
