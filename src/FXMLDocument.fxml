@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javachat.FXMLDocumentController">
+    <children>
+      <VBox layoutX="3.0" layoutY="-1.0" prefHeight="441.0" prefWidth="122.0">
+         <children>
+            <ListView fx:id="LVIEWCONTACTS" onMouseClicked="#onContactClicked" prefHeight="406.0" prefWidth="167.0" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" text="ADD CONTACT" />
+         </children>
+      </VBox>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <VBox layoutX="125.0" prefHeight="441.0" prefWidth="543.0">
+         <children>
+            <Label fx:id="LABELNAME" alignment="CENTER" prefHeight="8.0" prefWidth="545.0" style="-fx-background-color: lightblue;" text="NAME">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="LVIEWCHAT" prefHeight="366.0" prefWidth="543.0" />
+            <HBox prefHeight="44.0" prefWidth="543.0">
+               <children>
+                  <TextField fx:id="tfieldMessage" prefHeight="26.0" prefWidth="458.0" />
+                  <Button mnemonicParsing="false" onAction="#onSendMessageClicked" prefHeight="42.0" prefWidth="83.0" style="-fx-background-color: lightblue;" text="SEND" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
